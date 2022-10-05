@@ -21,12 +21,18 @@
     height: 270px;
     background-color: black;
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 30%;
+    top: 30%;
     transform: translate(-50%, -50%);
     border-radius: 30px;
     transition: 0.5s;
     user-select: none;
+    animation: cardanimation 1s alternate infinite;
+}
+
+@keyframes cardanimation {
+    from { transform: translateY(-20px);}
+    to { transform: translateY(20px);}
 }
 
 .wallpaper {
@@ -63,6 +69,7 @@
     font-family: comfortaa;
     font-weight: 700;
     font-size: 25px;
+    text-shadow: 0 2px 0 rgb(109, 109, 109);
 }
 
 .logo {
@@ -78,6 +85,7 @@
     font-size: 23px;
     font-family: orbitron;
     font-weight: 700;
+    text-shadow: 0 2px 0 rgb(109, 109, 109);
 }
 
 .validthru {
@@ -94,6 +102,7 @@
     font-size: 15px;
     font-family: orbitron;
     font-weight: 600;
+    text-shadow: 0 2px 0 rgb(109, 109, 109);
 }
 
 .person {
@@ -102,4 +111,5 @@
     left: 10px;
     font-family: orbitron;
     font-size: 20px;
+    text-shadow: 0 2px 0 rgb(109, 109, 109);
 }
